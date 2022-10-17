@@ -1,0 +1,157 @@
+* {
+    list-style: none;
+}
+
+.bgContainer {
+    background: rgb(22, 111, 218);
+    background: -moz-radial-gradient(
+        circle,
+        rgba(22, 111, 218, 1) 23%,
+        rgba(17, 69, 157, 1) 95%
+    );
+    background: -webkit-radial-gradient(
+        circle,
+        rgba(22, 111, 218, 1) 23%,
+        rgba(17, 69, 157, 1) 95%
+    );
+    background: radial-gradient(
+        circle,
+        rgba(22, 111, 218, 1) 23%,
+        rgba(17, 69, 157, 1) 95%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#166fda",endColorstr="#11459d",GradientType=1);
+    height: 100vh;
+}
+
+.generalButton {
+    border-radius: 5px;
+    background-color: rgb(8, 77, 156);
+    border-style: none;
+    font-size: 20px;
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 1);
+    margin-bottom: 10px;
+}
+
+.balanceContainer {
+    background-color: rgba(0, 0, 0, 0.571);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 1);
+}
+
+.bgContainerrrr {
+    background-color: rgba(0, 0, 0, 0.46);
+    border-radius: 10px;
+    color: white;
+    height: 150px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 1);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1.6fr 1.4fr 0.1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "INGRESO EGRESO ."
+        "TOTAL TOTAL ."
+        ". . .";
+}
+.INGRESO {
+    grid-area: INGRESO;
+    text-align: center;
+    font-size: 20px;
+}
+.EGRESO {
+    grid-area: EGRESO;
+    text-align: center;
+    font-size: 20px;
+}
+.TOTAL {
+    grid-area: TOTAL;
+    text-align: center;
+    font-size: 20px;
+}
+
+.numberInfo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.navBar-bg {
+    background-color: #343a40;
+    padding: 10px;
+    border-bottom: 5px solid #282d32;
+}
+
+.navBar-buttons {
+    border-radius: 5px;
+    border-style: none;
+    width: 70px;
+    font-size: 20px;
+    background-color: rgb(38, 128, 255);
+    color: white;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+}
+
+/* .type-income {
+    height: auto;
+    width: auto;
+    padding: 5px;
+    background-color: rgb(9, 176, 37);
+    border-radius: 5px;
+    text-align: center;
+}
+.type-outgoing {
+    height: auto;
+    width: auto;
+    padding: 5px;
+    background-color: rgb(195, 15, 15);
+    border-radius: 5px;
+    text-align: center;
+} */
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #fff;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    position: absolute; /* cambiamos de fixed a absolute */
+    /* Ponemos el valor de left, bottom, right y top en 0 */
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto; /* Centramos vertical y horizontalmente */
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.chotita {
+    position: absolute; /* cambiamos de fixed a absolute */
+    /* Ponemos el valor de left, bottom, right y top en 0 */
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
